@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AutoBuild\webpack\**" />
+    <Compile Remove="NewFolder\**" />
+    <EmbeddedResource Remove="AutoBuild\webpack\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="AutoBuild\webpack\**" />
+    <None Remove="NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dist\AutoBuild\final\" />
+    <Folder Include="src\PopUpUi\css\_partials\" />
+  </ItemGroup>
+
+</Project>

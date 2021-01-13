@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E8312332-EC91-473C-891C-9FAB7A7B56C3}"
+	ProjectSection(SolutionItems) = preProject
+		gulpfile.js = gulpfile.js
+		package.json = package.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{706EB27B-B85A-49DA-A401-712C6E5274E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NanoGridsSolver", "NanoGridsSolver.csproj", "{4BC27FFC-D548-4E7F-BE3C-A751E086D7BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BC27FFC-D548-4E7F-BE3C-A751E086D7BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC27FFC-D548-4E7F-BE3C-A751E086D7BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC27FFC-D548-4E7F-BE3C-A751E086D7BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC27FFC-D548-4E7F-BE3C-A751E086D7BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{706EB27B-B85A-49DA-A401-712C6E5274E7} = {E8312332-EC91-473C-891C-9FAB7A7B56C3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FDE0DD1-DD72-48AB-814A-E35CCA456EB9}
+	EndGlobalSection
+EndGlobal

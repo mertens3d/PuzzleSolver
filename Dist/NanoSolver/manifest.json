@@ -1,0 +1,36 @@
+﻿{
+  "manifest_version": 2,
+  "name": "NanoSolver",
+  "version": "1.5",
+
+  "description": "Puzzle Solver",
+
+  "icons": {
+    "48": "icons/glasses.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "all_frames": false,
+      "js": [
+        "AutoBuild/final/browser-polyfill.js",
+        "AutoBuild/final/Shared.min.js"
+        "AutoBuild/final/ContentAllFrames.min.js"
+      ]
+    }
+  ],
+
+  "web_accessible_resources": [ "AutoBuild/final/ContentTop.min.css" ],
+
+  "permissions": [
+    "activeTab",
+    "idle",
+    "storage"
+  ],
+  "browser_action": {
+    "default_icon": "icons/glasses.png",
+    "default_title": "Hind•Site",
+    "default_popup": "/AutoBuild/final/PopUpUi.min.html"
+  }
+}
