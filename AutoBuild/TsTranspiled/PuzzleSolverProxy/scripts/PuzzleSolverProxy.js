@@ -10,6 +10,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 export class PuzzleSolverProxy {
     constructor() {
         console.log('dog');
+        browser.runtime.onMessage.addListener((request) => this.RespondToPopUprequest(request));
+    }
+    RespondToPopUprequest(request) {
+        console.log('popup message received');
+        console.log(request);
     }
     StartUp() {
         return __awaiter(this, void 0, void 0, function* () {
@@ -19,3 +24,4 @@ export class PuzzleSolverProxy {
 }
 let PuzzleSolverProxyEntry = new PuzzleSolverProxy();
 PuzzleSolverProxyEntry.StartUp();
+console.log('content loaded');
