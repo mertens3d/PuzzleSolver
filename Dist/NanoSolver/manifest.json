@@ -6,7 +6,7 @@
   "description": "Puzzle Solver",
 
   "icons": {
-    "48": "icons/glasses.png"
+    "48": "icons/puzzle.jpg"
   },
 
   "content_scripts": [
@@ -15,8 +15,8 @@
       "all_frames": false,
       "js": [
         "AutoBuild/final/browser-polyfill.js",
-        "AutoBuild/final/Shared.min.js"
-        "AutoBuild/final/ContentAllFrames.min.js"
+        "AutoBuild/final/Shared.min.js",
+        "AutoBuild/final/PuzzleSolverProxy.min.js"
       ]
     }
   ],
@@ -27,10 +27,11 @@
     "activeTab",
     "idle",
     "storage"
+    //"chrome-extension"
   ],
   "browser_action": {
-    "default_icon": "icons/glasses.png",
-    "default_title": "Hind•Site",
+    "default_icon": "icons/puzzle.jpg",
+    "default_title": "Puzzle Solver",
     "default_popup": "/AutoBuild/final/PopUpUi.min.html"
   }
 }

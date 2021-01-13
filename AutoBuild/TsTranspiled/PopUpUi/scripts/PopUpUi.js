@@ -9,13 +9,20 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 export class popUpUi {
     constructor() {
-        console.log('dog');
+        console.log('dogdog');
     }
     StartUp() {
         return __awaiter(this, void 0, void 0, function* () {
-            console.log('dog');
+            const doItButton = document.querySelector('#idDoIt');
+            if (doItButton) {
+                doItButton.addEventListener('click', (evt) => this.OnDoItClick(evt));
+            }
         });
+    }
+    OnDoItClick(evt) {
+        console.log('clicked');
     }
 }
 let popUpUiEntry = new popUpUi();
 popUpUiEntry.StartUp();
+console.log('loaded');

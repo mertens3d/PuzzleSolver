@@ -24,8 +24,8 @@ class Vars {
 
 
     this.BrowserExtensionFolders = {
-      Root: './Dist/HindSite',
-      AutoBuildDest: '/HindSite/AutoBuild'
+      Root: './Dist/NanoSolver',
+      AutoBuildDest: '/NanoSolver/AutoBuild'
     };
 
     console.log('e) Constructing Vars');
