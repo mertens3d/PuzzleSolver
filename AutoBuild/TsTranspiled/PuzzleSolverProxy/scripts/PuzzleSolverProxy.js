@@ -7,6 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+import { PuzzleClicker } from "./PuzzleClicker";
 import { StateHarvester } from "./StateHarvester";
 export class PuzzleSolverProxy {
     constructor() {
@@ -17,6 +18,8 @@ export class PuzzleSolverProxy {
         console.log('popup message received');
         console.log(request);
         const state = new StateHarvester();
+        const clicker = new PuzzleClicker(null);
+        clicker.ClickSquare(3, 3);
     }
     StartUp() {
         return __awaiter(this, void 0, void 0, function* () {

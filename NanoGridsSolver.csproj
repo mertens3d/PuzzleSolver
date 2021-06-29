@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <Folder Include="Dist\AutoBuild\final\" />
+    <Folder Include="Dist\NanoSolver\icons\" />
     <Folder Include="src\PopUpUi\css\_partials\" />
   </ItemGroup>
 

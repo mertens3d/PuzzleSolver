@@ -1,5 +1,6 @@
 ﻿/// <reference path="../../../node_modules/web-ext-types/global/index.d.ts" />
 
+import { PuzzleClicker } from "./PuzzleClicker";
 import { StateHarvester } from "./StateHarvester";
 
 export class PuzzleSolverProxy {
@@ -15,6 +16,8 @@ export class PuzzleSolverProxy {
 
     const state: StateHarvester = new StateHarvester();
 
+    const clicker = new PuzzleClicker(null);
+    clicker.ClickSquare(3,3);
   }
 
   async StartUp() {

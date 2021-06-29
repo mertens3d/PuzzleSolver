@@ -1,0 +1,18 @@
+﻿{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "removeComments": true,
+    "sourceMap": false,
+    "alwaysStrict": false,
+    "noImplicitUseStrict": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "ES6",
+    "target": "ES5",
+    "allowJs": true,
+    "moduleResolution": "Node",
+    "typeRoots": [ "node_modules/@types", "node_modules/web-ext-types" ]
+  },
+  "exclude": [
+    "node_modules", "src"
+  ]
+}

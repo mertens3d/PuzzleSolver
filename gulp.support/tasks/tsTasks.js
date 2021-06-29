@@ -12,7 +12,7 @@ module.exports = {
     'removeComments': true,
     'sourceMap': false,
     'alwaysStrict': false,
-    'noImplicitAny': true,
+    'noImplicitAny': false,
     //'allowSyntheticDefaultImports': true,
     'module': 'es6',
     'target': 'es6', //changing to es5 will destroy the function.name capability of debugging
